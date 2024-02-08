@@ -17,7 +17,11 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 find_package(Qt6 COMPONENTS Core Gui Widgets REQUIRED)
 
 add_executable(Editor
-    main.cpp
+        main.cpp
+
+        mainwindow.cpp
+        mainwindow.h
+        mainwindow.ui
 )
 
 target_link_libraries(Editor PRIVATE Qt6::Core Qt6::Gui Qt6::Widgets)
